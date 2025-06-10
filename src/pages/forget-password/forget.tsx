@@ -1,6 +1,6 @@
 import side from "../../assets/images/side.png";
 import top from "../../assets/images/top.png";
-import "../../assets/CSS/forget.css";
+import "../../assets/css/forget.css";
 function Forget() {
   return (
     <>

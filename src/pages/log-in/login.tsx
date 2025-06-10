@@ -1,4 +1,4 @@
-import "../../assets/CSS/login.css";
+import "../../assets/css/login.css";
 import top from "../../assets/images/side.png";
 import logoImage from "../../assets/images/top.png";
 import nepal from "../../assets/images/nepal.webp";
