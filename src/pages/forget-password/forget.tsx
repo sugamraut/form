@@ -12,7 +12,7 @@ function Forget() {
           {/*ridht side image */}
           <div className="form">
             <form className="forgrt-from">
-              <div className="container">
+              <div className="containers">
                 <div className="logo">
                   <img
                     src={top}

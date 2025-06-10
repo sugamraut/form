@@ -3,11 +3,12 @@ import side from "../../assets/images/side.png";
 import top from "../../assets/images/top.png";
 import nepal from "../../assets/images/nepal.webp";
 
+
 function Register() {
   return (
     <>
-      <div className="register-continer">
-        <div className="register-box">
+      <div className="container">
+        <div className="box-section">
           <div className="image-section">
             <img src={side} style={{ borderRadius: "20px" }} alt="" />
           </div>
