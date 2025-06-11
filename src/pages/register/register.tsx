@@ -9,20 +9,15 @@ function Register() {
       <div className="container">
         <div className="box-section">
           <div className="image-section">
-            <img src={side} style={{ borderRadius: "20px" }} alt="" />
+            <img src={side} alt="" />
           </div>
           {/* right side section */}
           <div className="form-section">
             <form className="form-container">
               <div className="logo-container">
-                <img
-                  src={top}
-                  alt=""
-                  style={{ display: "flex" }}
-                  className="form-logo"
-                />
+                <img src={top} alt="" className="form-logo" />
               </div>
-              <h2 style={{ display: "flex" }}>
+              <h2>
                 {" "}
                 <span className="highlight">Merchant</span> Registration
               </h2>
@@ -31,12 +26,8 @@ function Register() {
                 finances
               </p>
 
-              <label
-                htmlFor="phone"
-                style={{ display: "flex" }}
-                className="lable"
-              >
-                Phone Number <span className="required">*</span>
+              <label htmlFor="phone" className="lable">
+                Phone Number <span className="requried">*</span>
               </label>
               <div className="phone-wrapper">
                 <div className="flag-area">
@@ -50,6 +41,7 @@ function Register() {
               <label
                 htmlFor="password"
                 style={{ color: "black", display: "flex" }}
+                className="lable"
               >
                 password
               </label>

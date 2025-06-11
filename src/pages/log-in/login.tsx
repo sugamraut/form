@@ -3,9 +3,9 @@ import top from "../../assets/images/side.png";
 import logoImage from "../../assets/images/top.png";
 import nepal from "../../assets/images/nepal.webp";
 
-function Login()  {
+function Login() {
   return (
-    <div className="containerr">
+    <div className="container">
       <div className="box-section">
         {/* Left Image Section */}
         <div className="image-section">
@@ -20,7 +20,7 @@ function Login()  {
               <img src={logoImage} alt="Logo" className="form-logo" />
             </div>
 
-            <h2 style={{ display: "flex" }}>
+            <h2>
               <span className="highlight"> Welcome </span> Back!
             </h2>
             <p style={{ display: "flex" }}>
@@ -28,8 +28,12 @@ function Login()  {
               finances
             </p>
 
-            <label htmlFor="phone" style={{ display: "flex" }} className="lable">
-              Phone Number <span className="required">*</span>
+            <label
+              htmlFor="phone"
+              style={{ display: "flex" }}
+              className="lable"
+            >
+              Phone Number <span className="requried">*</span>
             </label>
             <div className="phone-wrapper">
               <div className="flag-area">
@@ -44,7 +48,7 @@ function Login()  {
               htmlFor="password"
               style={{ color: "black", display: "flex" }}
             >
-              Password <span className="required">*</span>
+              Password <span className="requried">*</span>
             </label>
             <input
               type="password"

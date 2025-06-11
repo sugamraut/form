@@ -1,84 +1,16 @@
-body{  
-    font-family: 'sergoe UI',sans-serif;
-    background-color: #f5f5f5;
-}
-.forget-conitner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.forget-box{
-    display: flex;
-    width: 100%;
-    height: 600px;
-    background-color: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow:  0 0 20px rgba(0,0,0,0.8);
-}
-.image-form{
-    flex: 1;
-    padding-left: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-}
-.image-form img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.form{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    padding-left: 54px;
-    padding-right: 54px;
-
-}
-.form{
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-content: center;
-    justify-content: center;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    padding-right: 54px;
-    padding-left: 54px;
-}
-.forget-from{
-    width: 100%;
-    max-width: 380px;
-    text-align: center;
-}
-.form-lo{
-    width: 48px;
-    height: 48px;
-}
-.containers{
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    padding: 30px;
-    width: 350px;
-    text-align: center;
-}
-h2{
+h2 {
     color: #1a2d7d;
     font-weight: 700;
 }
-p{
+
+p {
     font-size: 14px;
     color: #888;
     margin-bottom: 25px;
 
 }
-.option{
+
+.option {
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
@@ -88,14 +20,17 @@ p{
     cursor: pointer;
 
 }
+
 .option input[type="radio"] {
     margin-right: 10px;
     accent-color: #1a2d7d;
-    }
- .option:hover {
+}
+
+.option:hover {
     background-color: #f0f4ff;
-    }
-  button {
+}
+
+button {
     background-color: #1a2d7d;
     color: white;
     padding: 10px 0;
@@ -104,14 +39,16 @@ p{
     width: 100%;
     font-size: 16px;
     cursor: pointer;
-    }
-    .back {
+}
+
+.back {
     display: block;
     margin-top: 15px;
     font-size: 14px;
     color: #1a2d7d;
     text-decoration: none;
-    }
- .back:hover {
+}
+
+.back:hover {
     text-decoration: underline;
-    }
+}

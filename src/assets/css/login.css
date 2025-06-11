@@ -36,9 +36,6 @@ button:hover {
   text-decoration: none;
 }
 
-
-
-
 .highlight {
   padding-right: 10px;
 
@@ -47,11 +44,4 @@ button:hover {
 input[type="tel"]:focus {
   border: 1px solid #000;
   outline: none;
-}
-
-input[type="password"]:focus {
-  border: 1px solid #000;
-  /* Apply border on click/focus */
-  outline: none;
-
 }

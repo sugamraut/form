@@ -1,96 +1,3 @@
-body{
-    margin: 0;
-    font-family: 'segoe UI',sans-serif;
-    background-color: #f5f5f5;
-    
-}
-.register-continer{
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0px;
-    overflow-x: hidden;
-}
-.register-box{
-    display: flex;
-    background-color: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0,0,0,0.8);
-}
-.image-section{
-    flex:1;
-    height: 90vh;
-    padding: 30px;
-}
-.image-section img{
-    width :100%;
-    height:100%;
-    object-fit:cover;
-
-}
-.form-sec{
-    flex: 1;
-    background-color: #fff;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    padding-left: 54px;
-    padding-right: 54px;
-    justify-content: flex-start;
-    position: relative;
-    top: 80px;
-}
-.Register-form{
-    width: 100%;
-    max-width: 860px;
-    text-align: center;
-}
-.logo-cont{
-    margin-bottom: 1rem;
-
-}
-.form-log{
-    width: 48px;
-    height: 48px;
-}
-.register-form h2{
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-}
-.register-form .highlig{
-    color: #0046ff;
-}
-
-.register-form p{
-    margin-bottom: 1.5rem;
-    color: #666;
-}
-.requried{
-    color: red;
-    font-weight: bold;
-}
-.input-with-prefix {
-  position: relative;
-  margin-bottom: 1rem;
-  width: 70%;
-}
-
-.input-with-prefix .prefix {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  font-size: 0.95rem;
-  color: #444;
-  margin-left: 30px;
-}
-.input-with-prefix input {
-  padding: 0.5rem 0.5rem 0.5rem 48px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  padding-left: 80px;
-  width: 130%;
-}
 input[type="password"] {
   width: 100%;
   padding: 0.5rem;
@@ -99,6 +6,7 @@ input[type="password"] {
   font-size: 0.95rem;
   margin-bottom: 1rem;
 }
+
 .form-extras {
   display: flex;
   justify-content: space-between;
@@ -106,10 +14,12 @@ input[type="password"] {
   font-size: 0.85rem;
   margin-bottom: 1.2rem;
 }
+
 .form-extras a {
   text-decoration: none;
   color: #0046ff;
 }
+
 button {
   width: 100%;
   background-color: #0046ff;
@@ -121,34 +31,20 @@ button {
   cursor: pointer;
   margin-bottom: 1rem;
 }
+
 button:hover {
   background-color: #0035e0;
 }
-.register {
-  font-size: 0.9rem;
-}
-.form-logo{
-   align-items: start;
-    justify-content: start;
-    display: grid;
-}
-.flag {
-  width: 20px;
-  height: 14px;
-  position: absolute;
-  top: 50%;
-  left: 6px;
-  transform: translateY(-50%);
-}
-.highlig{
-  padding-right: 10px;
-}
-input[type="password"]:focus{
+
+
+
+input[type="password"]:focus {
   border: 1px solid #000;
   outline: none;
 
 }
-input[type="tel"]:focus{
+
+input[type="tel"]:focus {
   border: 1px solid #000;
   outline: none;
 }
