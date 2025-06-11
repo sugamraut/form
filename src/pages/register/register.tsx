@@ -1,5 +1,4 @@
 import "../../assets/css/register.css";
-import sidesectionside from "../../assets/images/side.png";
 import top from "../../assets/images/top.png";
 import nepal from "../../assets/images/nepal.webp";
 import sidevideos from "../../assets/images/sidevideo.mp4";

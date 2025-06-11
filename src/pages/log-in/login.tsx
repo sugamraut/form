@@ -1,5 +1,4 @@
 import "../../assets/css/login.css";
-import sideSectionImage from "../../assets/images/side.png";
 import logoImage from "../../assets/images/top.png";
 import nepal from "../../assets/images/nepal.webp";
 import sidevideos from "../../assets/images/sidevideo.mp4"
