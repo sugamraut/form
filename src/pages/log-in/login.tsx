@@ -5,8 +5,8 @@ import nepal from "../../assets/images/nepal.webp";
 
 function Login()  {
   return (
-    <div className="login-container">
-      <div className="login-box">
+    <div className="containerr">
+      <div className="box-section">
         {/* Left Image Section */}
         <div className="image-section">
           <img src={top} style={{ borderRadius: "20px" }} alt="" />
@@ -14,9 +14,9 @@ function Login()  {
 
         {/* Right Form Section */}
         <div className="form-section">
-          <form className="login-form">
+          <form className="form-container">
             {/* Logo at top */}
-            <div className="logo-container">
+            <div className="logo-container ">
               <img src={logoImage} alt="Logo" className="form-logo" />
             </div>
 
@@ -28,7 +28,7 @@ function Login()  {
               finances
             </p>
 
-            <label htmlFor="phone" style={{ display: "flex" }}>
+            <label htmlFor="phone" style={{ display: "flex" }} className="lable">
               Phone Number <span className="required">*</span>
             </label>
             <div className="phone-wrapper">

@@ -3,7 +3,6 @@ import side from "../../assets/images/side.png";
 import top from "../../assets/images/top.png";
 import nepal from "../../assets/images/nepal.webp";
 
-
 function Register() {
   return (
     <>
@@ -13,36 +12,40 @@ function Register() {
             <img src={side} style={{ borderRadius: "20px" }} alt="" />
           </div>
           {/* right side section */}
-          <div className="form-sec">
-            <form className="register-form">
-              <div className="logo-cont">
+          <div className="form-section">
+            <form className="form-container">
+              <div className="logo-container">
                 <img
                   src={top}
                   alt=""
                   style={{ display: "flex" }}
-                  className="form-log"
+                  className="form-logo"
                 />
               </div>
               <h2 style={{ display: "flex" }}>
                 {" "}
-                <span className="highlig">Merchant</span> Registration
+                <span className="highlight">Merchant</span> Registration
               </h2>
-              <p style={{display:"flex"}}>
+              <p style={{ display: "flex" }}>
                 Enjoy all the feature that make it easy for you to manage your
                 finances
               </p>
 
               <label
                 htmlFor="phone"
-                style={{ color: "black", display: "flex" }}
+                style={{ display: "flex" }}
+                className="lable"
               >
                 Phone Number <span className="required">*</span>
               </label>
-              <div className="input-with-prefix">
-                <img src={nepal} alt="" className="flag-icon" />
-                <span className="prefix">+977</span>
-
-                <input type="tel" id="phone" placeholder="(000) 000-0000" />
+              <div className="phone-wrapper">
+                <div className="flag-area">
+                  <img src={nepal} alt="Nepal Flag" />
+                </div>
+                <div className="input-area">
+                  <span className="fixed-code">+977</span>
+                  <input type="text" id="phone" placeholder="(000) 000-0000" />
+                </div>
               </div>
               <label
                 htmlFor="password"
@@ -70,8 +73,7 @@ function Register() {
 
               <button type="submit">Register into your account</button>
               <p className="register">
-                Alerady have an account?{" "}
-                <a href="/">Go back to sign in!</a>
+                Alerady have an account? <a href="/">Go back to sign in!</a>
               </p>
             </form>
           </div>

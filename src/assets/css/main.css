@@ -64,3 +64,103 @@ body {
     color: #0046ff;
 
 }
+
+.form-container p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.requried {
+    color: red;
+    font-weight: bold;
+}
+
+.lable {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1e1e2f;
+}
+
+.phone-wrapper {
+    display: flex;
+    align-items: center;
+    border: 8px;
+}
+
+.flag-area {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    height: 48px;
+    margin-right: 8px;
+}
+
+.flag-area img {
+    width: 36px;
+    height: 33px;
+    margin-right: 6px;
+}
+
+.flag-area::after {
+    content: "▾";
+    font-size: 12px;
+    margin-left: 6px;
+    color: #555;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background-color: white;
+    border-radius: 1px solid #cfd4dc;
+    border-radius: 8px;
+    height: 34px;
+    padding: 0 12px;
+    width: 100%;
+}
+
+.fixed-code {
+    color: #1e1e2f;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 6px;
+    white-space: nowrap;
+}
+
+.input-area input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.input-area input::placeholder {
+    color: #a8a8b3;
+}
+
+input[type="password"] {
+    width: 97%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+input[type="tel"]:focus {
+  border: 1px solid #000;
+  outline: none;
+}
+
+input[type="password"]:focus {
+  border: 1px solid #000;
+  /* Apply border on click/focus */
+  outline: none;
+
+}
+.highlight {
+  padding-right: 10px;
+
+}
