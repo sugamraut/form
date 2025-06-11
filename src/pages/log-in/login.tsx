@@ -1,7 +1,8 @@
 import "../../assets/css/login.css";
-import top from "../../assets/images/side.png";
+import sideSectionImage from "../../assets/images/side.png";
 import logoImage from "../../assets/images/top.png";
 import nepal from "../../assets/images/nepal.webp";
+import sidevideos from "../../assets/images/sidevideo.mp4"
 
 function Login() {
   return (
@@ -9,7 +10,9 @@ function Login() {
       <div className="box-section">
         {/* Left Image Section */}
         <div className="image-section">
-          <img src={top} alt="" />
+          <video autoPlay muted loop playsInline>
+            <source src={sidevideos} type="video/mp4" />
+          </video>
         </div>
 
         {/* Right Form Section */}
@@ -54,7 +57,12 @@ function Login() {
 
             <div className="form-extras">
               <label>
-                <input type="checkbox" style={{ color: "black" }} /> Remember me
+                <input
+                  type="checkbox"
+                  style={{ color: "black" }}
+                  id="toggleSwitch"
+                />{" "}
+                Remember me
               </label>
               <a href="/forget">Forgot Password?</a>
             </div>

@@ -1,7 +1,8 @@
 import "../../assets/css/register.css";
-import side from "../../assets/images/side.png";
+import sidesectionside from "../../assets/images/side.png";
 import top from "../../assets/images/top.png";
 import nepal from "../../assets/images/nepal.webp";
+import sidevideos from "../../assets/images/sidevideo.mp4";
 
 function Register() {
   return (
@@ -9,7 +10,9 @@ function Register() {
       <div className="container">
         <div className="box-section">
           <div className="image-section">
-            <img src={side} alt="" />
+            <video autoPlay muted loop playsInline>
+              <source src={sidevideos} type="video/mp4" />
+            </video>
           </div>
           {/* right side section */}
           <div className="form-section">

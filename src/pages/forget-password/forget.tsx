@@ -1,13 +1,16 @@
 import sideimage from "../../assets/images/side.png";
 import top from "../../assets/images/top.png";
 import "../../assets/css/forget.css";
+import sidevideos from "../../assets/images/sidevideo.mp4";
 function Forget() {
   return (
     <>
       <div className="container">
         <div className="box-section">
           <div className="image-section">
-            <img src={sideimage} alt="" />
+            <video autoPlay muted loop playsInline>
+              <source src={sidevideos} type="video/mp4" />
+            </video>
           </div>
           {/*right side image */}
           <div className="form-section">
