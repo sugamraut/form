@@ -1,4 +1,4 @@
-import side from "../../assets/images/side.png";
+import sideimage from "../../assets/images/side.png";
 import top from "../../assets/images/top.png";
 import "../../assets/css/forget.css";
 function Forget() {
@@ -7,9 +7,9 @@ function Forget() {
       <div className="container">
         <div className="box-section">
           <div className="image-section">
-            <img src={side} alt="" style={{ borderRadius: "20px" }} />
+            <img src={sideimage} alt="" />
           </div>
-          {/*ridht side image */}
+          {/*right side image */}
           <div className="form-section">
             <form className="">
               <div className="logo-container">

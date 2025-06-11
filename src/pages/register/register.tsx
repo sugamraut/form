@@ -21,7 +21,7 @@ function Register() {
                 {" "}
                 <span className="highlight">Merchant</span> Registration
               </h2>
-              <p style={{ display: "flex" }}>
+              <p className="topmessage">
                 Enjoy all the feature that make it easy for you to manage your
                 finances
               </p>
@@ -38,11 +38,7 @@ function Register() {
                   <input type="text" id="phone" placeholder="(000) 000-0000" />
                 </div>
               </div>
-              <label
-                htmlFor="password"
-                style={{ color: "black", display: "flex" }}
-                className="lable"
-              >
+              <label htmlFor="password" className="lable">
                 password
               </label>
               <input
@@ -51,10 +47,7 @@ function Register() {
                 id="password"
                 placeholder="Enter the password there"
               />
-              <label
-                htmlFor="confirm-password"
-                style={{ color: "black", display: "flex" }}
-              >
+              <label htmlFor="confirm-password" className="lable">
                 Confirm Password
               </label>
               <input

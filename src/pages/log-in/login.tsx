@@ -9,7 +9,7 @@ function Login() {
       <div className="box-section">
         {/* Left Image Section */}
         <div className="image-section">
-          <img src={top} style={{ borderRadius: "20px" }} alt="" />
+          <img src={top} alt="" />
         </div>
 
         {/* Right Form Section */}
@@ -23,16 +23,12 @@ function Login() {
             <h2>
               <span className="highlight"> Welcome </span> Back!
             </h2>
-            <p style={{ display: "flex" }}>
+            <p className="topmessage">
               Enjoy all the features that make it easy for you to manage your
               finances
             </p>
 
-            <label
-              htmlFor="phone"
-              style={{ display: "flex" }}
-              className="lable"
-            >
+            <label htmlFor="phone" className="lable">
               Phone Number <span className="requried">*</span>
             </label>
             <div className="phone-wrapper">

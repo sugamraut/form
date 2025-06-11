@@ -60,7 +60,9 @@ body {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
     display: flex;
-
+}
+.topmessage{
+    display: flex;
 }
 
 .form-container .highlight {
