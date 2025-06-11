@@ -41,7 +41,9 @@ button:hover {
 
 }
 
-input[type="tel"]:focus {
-  border: 1px solid #000;
-  outline: none;
+
+
+.dropdown {
+  height: 29px;
+  border-radius: 8px
 }

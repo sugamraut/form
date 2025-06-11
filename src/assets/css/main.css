@@ -20,6 +20,7 @@ body {
 .image-section {
     flex: 1;
     height: 88vh;
+    width: 687px;
     padding: 30px;
 }
 
@@ -61,7 +62,8 @@ body {
     margin-bottom: 0.5rem;
     display: flex;
 }
-.topmessage{
+
+.topmessage {
     display: flex;
 }
 

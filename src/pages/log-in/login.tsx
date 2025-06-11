@@ -1,7 +1,7 @@
 import "../../assets/css/login.css";
 import logoImage from "../../assets/images/top.png";
 import nepal from "../../assets/images/nepal.webp";
-import sidevideos from "../../assets/images/sidevideo.mp4"
+import sidevideos from "../../assets/images/sidevideo.mp4";
 
 function Login() {
   return (
@@ -35,7 +35,12 @@ function Login() {
             </label>
             <div className="phone-wrapper">
               <div className="flag-area">
-                <img src={nepal} alt="Nepal Flag" />
+                <select name="" id="" className="dropdown">
+                  <option value="">🚩</option>
+                  <option value="">🏳️</option>
+                  <option value="">🇳🇵</option>
+                  <option> </option>
+                </select>
               </div>
               <div className="input-area">
                 <span className="fixed-code">+977</span>
