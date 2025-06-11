@@ -1,6 +1,5 @@
 import "../../assets/css/login.css";
 import logoImage from "../../assets/images/top.png";
-import nepal from "../../assets/images/nepal.webp";
 import sidevideos from "../../assets/images/sidevideo.mp4";
 
 function Login() {
@@ -39,7 +38,6 @@ function Login() {
                   <option value="">🚩</option>
                   <option value="">🏳️</option>
                   <option value="">🇳🇵</option>
-                  <option> </option>
                 </select>
               </div>
               <div className="input-area">
@@ -58,19 +56,17 @@ function Login() {
               id="password"
               placeholder="Enter your password"
             />
-
             <div className="form-extras">
-              <label>
-                <input
-                  type="checkbox"
-                  style={{ color: "black" }}
-                  id="toggleSwitch"
-                />{" "}
-                Remember me
-              </label>
+              <div className="remember-wrap">
+                <label className="switch">
+                  <input type="checkbox" id="toggleSwitch" />
+                  <span className="slider"></span>
+                </label>
+                <span className="statusText">Remember me</span>
+              </div>
+
               <a href="/forget">Forgot Password?</a>
             </div>
-
             <button type="submit">Login into your account</button>
             <p className="register">
               Don't have an account? <a href="/register">Register</a>

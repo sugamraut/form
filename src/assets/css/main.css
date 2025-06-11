@@ -34,7 +34,8 @@ body {
 .form-section {
     flex: 1;
     background-color: #fff;
-    padding: 55px 54px 55px 54px;
+    padding: 10px;
+    padding-right: 55px;
     justify-content: flex-start;
     position: relative;
     top: 80px;
@@ -150,17 +151,16 @@ body {
 }
 
 input[type="password"] {
-    width: 97%;
+    width: 100%;
     padding: 0.5rem;
     border: 1px solid #ccc;
-    ;
     border-radius: 6px;
     font-size: 0.95rem;
     margin-bottom: 1rem;
 }
 
-input[type="tel"]:focus {
-    border: 1px solid #000;
+.input-area:focus {
+    border: 2px solid #000;
     outline: none;
 }
 
