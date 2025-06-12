@@ -45,10 +45,7 @@ function Login() {
                 <input type="text" id="phone" placeholder="(000) 000-0000" />
               </div>
             </div>
-            <label
-              htmlFor="password"
-              style={{ color: "black", display: "flex" }}
-            >
+            <label htmlFor="password" className="lable">
               Password <span className="requried">*</span>
             </label>
             <input
@@ -65,12 +62,16 @@ function Login() {
                 <span className="statusText">Remember me</span>
               </div>
 
-              <a href="/forget">Forgot Password?</a>
+              <a href="/forget" className="forget-link">
+                Forgot Password?
+              </a>
             </div>
-            <button type="submit">Login into your account</button>
             <p className="register">
               Don't have an account? <a href="/register">Register</a>
             </p>
+            <button type="submit" className="button">
+              Login into your account
+            </button>
           </form>
         </div>
       </div>

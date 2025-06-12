@@ -19,7 +19,6 @@ function Register() {
                 <img src={top} alt="" className="form-logo" />
               </div>
               <h2>
-                {" "}
                 <span className="highlight">Merchant</span> Registration
               </h2>
               <p className="topmessage">
@@ -64,7 +63,7 @@ function Register() {
                 Alerady have an account? <a href="/">Go back to sign in!</a>
               </p>
 
-              <button type="submit">Register into your account</button>
+              <button type="submit" className="button">Register into your account</button>
             </form>
           </div>
         </div>

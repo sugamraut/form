@@ -38,8 +38,8 @@ function Forget() {
                 <input type="radio" name="recovery" value="phone" />
                 Phone number
               </label>
-              <button>Next</button>
-              <a href="/">← Back to login </a>
+              <button className="button">Next</button>
+              <a href="/" className="link">← Back to login </a>
             </form>
           </div>
         </div>
