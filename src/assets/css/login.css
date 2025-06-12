@@ -1,31 +1,3 @@
-.form-extras {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 0;
-}
-
-.form-extras a {
-  text-decoration: none;
-  color: #0046ff;
-}
-
-button {
-  width: 100%;
-  background-color: #0046ff;
-  color: white;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-bottom: 1rem;
-}
-
-button:hover {
-  background-color: #0035e0;
-}
-
 .register {
   font-size: 0.9rem;
 }
@@ -35,10 +7,6 @@ button:hover {
   text-decoration: none;
 }
 
-.highlight {
-  padding-right: 10px;
-
-}
 
 .dropdown {
   height: 29px;
