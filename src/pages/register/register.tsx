@@ -60,11 +60,11 @@ function Register() {
                 id="confirm-password"
                 placeholder="Enter the confirm password"
               />
-
-              <button type="submit">Register into your account</button>
               <p className="register">
                 Alerady have an account? <a href="/">Go back to sign in!</a>
               </p>
+
+              <button type="submit">Register into your account</button>
             </form>
           </div>
         </div>

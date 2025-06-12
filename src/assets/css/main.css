@@ -30,7 +30,7 @@ body {
 
 .form-section {
     flex: 1;
-    background-color: #fff;
+   
     padding: 10px;
     padding-right: 55px;
     justify-content: center;
@@ -106,7 +106,6 @@ body {
 .flag-area {
     display: flex;
     align-items: center;
-    background-color: white;
     border-radius: 8px;
     height: 48px;
     margin-right: 8px;
