@@ -43,3 +43,7 @@ p {
 .back:hover {
     text-decoration: underline;
 }
+
+.text-area {
+    display: flex;
+}

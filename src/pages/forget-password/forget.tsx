@@ -13,7 +13,7 @@ function Forget() {
           </div>
           {/*right side image */}
           <div className="form-section">
-            <form className="">
+            <form className="form-container">
               <div className="logo-container">
                 <img
                   src={top}
@@ -24,9 +24,9 @@ function Forget() {
               </div>
 
               <h2>
-                <span style={{ color: "#1a2d7d" }}>Choose</span>Recovery Process
+                <span>Choose</span>Recovery Process
               </h2>
-              <p>
+              <p className="text-area">
                 Selected the contact details you prefer for password recovery
               </p>
               <label className="option">

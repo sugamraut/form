@@ -1,4 +1,4 @@
-import "../../assets/css/register.css";
+// import "../../assets/css/register.css";
 import top from "../../assets/images/top.png";
 import sidevideos from "../../assets/images/sidevideo.mp4";
 
