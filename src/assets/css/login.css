@@ -96,9 +96,3 @@ input:checked+.slider:before {
   /* 150% */
 
 }
-
-.hi {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
