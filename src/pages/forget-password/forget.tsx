@@ -6,7 +6,7 @@ function Forget() {
     <>
       <div className="container">
         <div className="box-section">
-          <div className="image-section">
+          <div className="video-section">
             <video autoPlay muted loop playsInline>
               <source src={sidevideos} type="video/mp4" />
             </video>

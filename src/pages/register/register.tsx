@@ -1,6 +1,5 @@
 import "../../assets/css/register.css";
 import top from "../../assets/images/top.png";
-import nepal from "../../assets/images/nepal.webp";
 import sidevideos from "../../assets/images/sidevideo.mp4";
 
 function Register() {
@@ -8,7 +7,7 @@ function Register() {
     <>
       <div className="container">
         <div className="box-section">
-          <div className="image-section">
+          <div className="video-section">
             <video autoPlay muted loop playsInline>
               <source src={sidevideos} type="video/mp4" />
             </video>

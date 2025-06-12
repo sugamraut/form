@@ -6,27 +6,22 @@ body {
 }
 
 .container {
-
     align-items: center;
-
 }
 
 .box-section {
     display: flex;
-    background-color: #fff;
-    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
-.image-section {
+.video-section {
     flex: 1;
     height: 88vh;
     width: 687px;
     padding: 30px;
 }
 
-.image-section video {
+.video-section video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -38,10 +33,9 @@ body {
     background-color: #fff;
     padding: 10px;
     padding-right: 55px;
-    justify-content: flex-start;
-    position: relative;
-    top: 80px;
-
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .form-container {
@@ -162,7 +156,8 @@ input[type="tel"] {
 }
 
 input[type="password"]:focus,
-input[type="tel"]:focus,.dropdown:focus{
+input[type="tel"]:focus,
+.dropdown:focus {
     border: 1px solid #000;
     outline: none;
 }
@@ -199,4 +194,13 @@ button {
 
 button:hover {
     background-color: #0035e0;
+}
+
+.register {
+    font-size: 0.9rem;
+}
+
+.register a {
+    color: #0046ff;
+    text-decoration: none;
 }
