@@ -49,18 +49,28 @@ body {
 }
 
 .form-logo {
-    width: 40px;
+    width: 59px;
     display: flex;
 }
 
 .form-container h2 {
-    font-size: 1.8rem;
+
     margin-bottom: 0.5rem;
     display: flex;
+    font-family: Sora;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
 }
 
 .topmessage {
     display: flex;
+    font-family: "Be Vietnam Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .form-container .highlight {
@@ -79,11 +89,12 @@ body {
 }
 
 .lable {
-    font-size: 14px;
-    font-weight: 300;
-    color: #1e1e2f;
     display: flex;
-    display: flex;
+    font-family: "Be Vietnam Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .phone-wrapper {
@@ -164,7 +175,6 @@ input[type="tel"]:focus,
 
 .highlight {
     padding-right: 10px;
-
 }
 
 .form-extras {
