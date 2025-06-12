@@ -1,6 +1,8 @@
-// import "../../assets/css/register.css";
+ import "../../assets/css/register.css";
 import top from "../../assets/images/top.png";
 import sidevideos from "../../assets/images/sidevideo.mp4";
+import vector from "../../assets/images/Vector.png"
+import { useState } from "react";
 
 function Register() {
   return (
@@ -42,15 +44,21 @@ function Register() {
                   <input type="text" id="phone" placeholder="(000) 000-0000" />
                 </div>
               </div>
+              <div>
               <label htmlFor="password" className="lable">
                 password
               </label>
               <input
-                type="password"
+                type='password'
                 name=""
                 id="password"
                 placeholder="Enter the password there"
+                
               />
+              <button className="eye">
+                <img src={vector} alt="" />
+
+              </button>
               <label htmlFor="confirm-password" className="lable">
                 Confirm Password
               </label>
@@ -59,6 +67,12 @@ function Register() {
                 id="confirm-password"
                 placeholder="Enter the confirm password"
               />
+              <button className="eye">
+                <img src={vector} alt="" />
+
+              </button>
+              
+              </div>
               <p className="register">
                 Alerady have an account? <a href="/">Go back to sign in!</a>
               </p>

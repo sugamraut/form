@@ -153,14 +153,14 @@ body {
 
 input[type="password"],
 input[type="tel"] {
-    width: 98%;
+    width: 97%;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 6px;
     margin-bottom: 1rem;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+font-weight: 400;
 }
 
 input[type="password"]:focus,
@@ -174,7 +174,7 @@ input[type="password"]:focus,
 }
 
 
-button {
+.button {
     width: 100%;
     background-color: #1F3A8A;
     color: white;
@@ -187,7 +187,7 @@ button {
     transition: 0.35s;
 }
 
-button:hover {
+.button:hover {
     background-color: #0035e0;
 }
 
@@ -206,4 +206,94 @@ button:hover {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+}
+
+/* Large desktops and bigger screens */
+@media (min-width: 1200px) {
+  .box-section {
+    height: 100vh;
+  }
+  .video-section {
+    width: 687px;
+    padding: 30px;
+  }
+  .form-section {
+    padding-right: 55px;
+  }
+  .form-container h2 {
+    font-size: 40px;
+  }
+}
+
+/* Tablets and medium screens */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .box-section {
+    flex-direction: row;
+    height: auto;
+  }
+  .video-section {
+    width: 50%;
+    padding: 20px;
+  }
+  .form-section {
+    width: 50%;
+    padding: 20px 30px;
+  }
+  .form-container h2 {
+    font-size: 32px;
+  }
+  .button {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  .box-section {
+    flex-direction: row;
+    height: auto;
+  }
+  .video-section {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .form-section {
+    width: 100%;
+    padding: 15px 20px;
+  }
+  .form-container h2 {
+    font-size: 28px;
+  }
+  .button {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+  input[type="password"],
+  input[type="tel"],
+  .dropdown {
+    width: 100%;
+  }
+  .eye {
+    bottom: 35px; /* adjusted for smaller inputs */
+    float: right;
+    position: absolute;
+    right: 15px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 400px) {
+  .form-container h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .button {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
 }

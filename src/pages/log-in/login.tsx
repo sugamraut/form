@@ -1,6 +1,7 @@
 import "../../assets/css/login.css";
 import logoImage from "../../assets/images/top.png";
 import sidevideos from "../../assets/images/sidevideo.mp4";
+import vector from "../../assets/images/Vector.png"
 
 function Login() {
   return (
@@ -53,6 +54,10 @@ function Login() {
               id="password"
               placeholder="Enter your password"
             />
+            <button className="eye">
+                <img src={vector} alt="" />
+
+              </button>
             <div className="form-extras">
               <div className="remember-wrap">
                 <label className="switch">
