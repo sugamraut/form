@@ -291,18 +291,3 @@ input[type="password"]:focus,
 
 }
 
-/* Extra small phones */
-@media (max-width: 400px) {
-  .form-container h2 {
-    font-size: 24px;
-  }
-
-  p {
-    font-size: 13px;
-  }
-
-  .button {
-    padding: 0.5rem;
-    font-size: 0.8rem;
-  }
-}
