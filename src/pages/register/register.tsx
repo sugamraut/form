@@ -2,7 +2,7 @@ import "../../assets/css/register.css";
 import top from "../../assets/images/top.png";
 import sidevideos from "../../assets/images/sidevideo.mp4";
 import vector from "../../assets/images/Vector.png";
-import IonIcon from "@reacticons/ionicons";
+//import IonIcon from "@reacticons/ionicons";
 
 function Register() {
   return (
