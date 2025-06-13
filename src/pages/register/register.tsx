@@ -2,6 +2,7 @@
 import top from "../../assets/images/top.png";
 import sidevideos from "../../assets/images/sidevideo.mp4";
 import vector from "../../assets/images/Vector.png"
+ import IonIcon from '@reacticons/ionicons';
 
 function Register() {
   return (
@@ -77,10 +78,12 @@ function Register() {
               </p>
 
               <button type="submit" className="button">Register into your account</button>
+                    {/* <IonIcon  name="eye-outline"/> */}
             </form>
           </div>
         </div>
       </div>
+
     </>
   );
 }
