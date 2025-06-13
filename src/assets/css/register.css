@@ -1,10 +1,61 @@
- 
-    .eye{
-   bottom: 41px;
-    border: none;
-    background: none;
-    float: inline-end;
-   
-    position: relative;
-    }
-    
+/* .input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 35px;
+  padding: 0 8px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  height: 100%;
+  background: transparent;
+}
+
+.eye {
+  cursor: pointer;
+}
+
+.eye img {
+  width: 20px;
+  height: 20px;
+} */
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* space on right for eye icon */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.eye {
+  position: absolute;
+  top: 40%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.eye img {
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.eye:hover img {
+  opacity: 1;
+}

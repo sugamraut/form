@@ -1,8 +1,7 @@
-
-
 .dropdown {
   height: 29px;
-  border-radius: 8px
+  border-radius: 8px;
+  border: none;
 }
 
 .switch {
@@ -48,23 +47,25 @@ input:checked+.slider:before {
 .statusText {
 
   margin: 5px;
-  font-family: "Be Vietnam Pro",sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
 
 }
+
 .form-extras {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.85rem;
-    margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 1.2rem;
 }
 
 .forget-link {
-    text-decoration: none;
-    color: #1F3A8A;
-    font-family: "Be Vietnam Pro", sans-serif;
+  text-decoration: none;
+  color: #1F3A8A;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
+

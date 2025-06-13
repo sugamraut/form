@@ -34,9 +34,7 @@ body {
 
 .form-section {
   flex: 1;
-
   padding: 10px;
-  padding-right: 55px;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -45,20 +43,15 @@ body {
 .form-container {
   width: 100%;
   max-width: 860px;
-  text-align: center;
 }
 
 .form-logo {
   width: 59px;
-  display: flex;
 }
 
 .form-container h2 {
-
   margin-bottom: 0.5rem;
-  display: flex;
   font-family: Sora;
-  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
@@ -83,8 +76,6 @@ body {
 
 .lable,
 .topmessage {
-  display: flex;
-
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -118,15 +109,15 @@ body {
 }
 
 .input-area {
-  display: flex;
-  align-items: center;
-  flex: 1;
   background-color: white;
   border: 1px solid #cfd4dc;
-  border-radius: 8px;
-  height: 36px;
-  padding: 0 12px;
+  border-radius: 6px;
+  padding: 5px;
   width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 400
 }
 
 .fixed-code {
@@ -153,12 +144,13 @@ body {
 
 input[type="password"],
 input[type="tel"] {
-  width: 97%;
+  width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 6px;
   margin-bottom: 1rem;
   font-size: 16px;
+  box-sizing: border-box;
   font-style: normal;
   font-weight: 400;
 }
@@ -193,6 +185,8 @@ input[type="password"]:focus,
 
 .register {
   font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
 
 }
 

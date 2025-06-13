@@ -1,8 +1,8 @@
- import "../../assets/css/register.css";
+import "../../assets/css/register.css";
 import top from "../../assets/images/top.png";
 import sidevideos from "../../assets/images/sidevideo.mp4";
-import vector from "../../assets/images/Vector.png"
- import IonIcon from '@reacticons/ionicons';
+import vector from "../../assets/images/Vector.png";
+import IonIcon from "@reacticons/ionicons";
 
 function Register() {
   return (
@@ -44,46 +44,47 @@ function Register() {
                   <input type="text" id="phone" placeholder="(000) 000-0000" />
                 </div>
               </div>
-              <div>
               <label htmlFor="password" className="lable">
-                password
+                Password
               </label>
-              <input
-                type='password'
-                name=""
-                id="password"
-                placeholder="Enter the password there"
-                
-              />
-              <button className="eye">
-                <img src={vector} alt="" />
+              <div className="input-wrapper">
+                <input
+                  type="password"
+                  name=""
+                  id="password"
+                  placeholder="Enter the password there"
+                />
+                <span className="eye">
+                  <img src={vector} alt="" />
+                </span>
+              </div>
 
-              </button>
               <label htmlFor="confirm-password" className="lable">
                 Confirm Password
               </label>
-              <input
-                type="password"
-                id="confirm-password"
-                placeholder="Enter the confirm password"
-              />
-              <button className="eye">
-                <img src={vector} alt="" />
-
-              </button>
-              
+                     <div className="input-wrapper">
+                <input
+                  type="password"
+                  name=""
+                  id="password"
+                  placeholder="Enter the password there"
+                />
+                <span className="eye">
+                  <img src={vector} alt="" />
+                </span>
               </div>
               <p className="register">
                 Alerady have an account? <a href="/">Go back to sign in!</a>
               </p>
 
-              <button type="submit" className="button">Register into your account</button>
-                    {/* <IonIcon  name="eye-outline"/> */}
+              <button type="submit" className="button">
+                Register into your account
+              </button>
+              {/* <IonIcon  name="eye-outline"/> */}
             </form>
           </div>
         </div>
       </div>
-
     </>
   );
 }
