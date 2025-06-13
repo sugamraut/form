@@ -48,7 +48,9 @@ function Login() {
             </div>
 
             <label htmlFor="password" className="lable">
-              Password <span className="requried">*</span>
+              Password
+               <span className="requried">*</span>
+                </label>
               <div className="input-wrapper">
                 <input
                   type="password"
@@ -60,7 +62,7 @@ function Login() {
                   <img src={vector} alt="" />
                 </span>
               </div>
-            </label>
+           
 
             <div className="form-extras">
               <div className="remember-wrap">
