@@ -67,7 +67,7 @@ function Register() {
                   type="password"
                   name=""
                   id="password"
-                  placeholder="Enter the password there"
+                  placeholder="Enter the confirm password there"
                 />
                 <span className="eye">
                   <img src={vector} alt="" />
