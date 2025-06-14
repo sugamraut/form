@@ -80,12 +80,15 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  gap: 2px;
 }
 
 .phone-wrapper {
   display: flex;
   align-items: center;
   border: 8px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .flag-area {
@@ -98,7 +101,6 @@ body {
 
 .flag-area img {
   width: 36px;
-  height: 33px;
   margin-right: 6px;
 }
 
@@ -111,7 +113,7 @@ body {
 .input-area {
   background-color: white;
   border: 1px solid #cfd4dc;
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 5px;
   width: 100%;
   font-size: 16px;
@@ -142,22 +144,22 @@ body {
   color: #a8a8b3;
 }
 
+.input-area:focus-within {
+  border: 1px solid #212529;
+}
+
 input[type="password"],
 input[type="tel"] {
-  width: 100%;
   padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
   margin-bottom: 1rem;
-  font-size: 16px;
-  box-sizing: border-box;
   font-style: normal;
   font-weight: 400;
+  gap: 8px;
 }
 
 input[type="password"]:focus,
 .dropdown:focus {
-  border: 1px solid #000;
+  border: 1px solid #212529;
   outline: none;
 }
 
@@ -284,4 +286,3 @@ input[type="password"]:focus,
   }
 
 }
-
