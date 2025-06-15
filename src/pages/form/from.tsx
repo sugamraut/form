@@ -90,7 +90,8 @@ function Register({ isRegister }: { isRegister: boolean }) {
                     />
                     <span
                       className="eye"
-                      onClick={() => setShowConfirmPassword((p) => !p)}
+                     //onClick={() => setShowConfirmPassword((p) => !p)}
+                     onClick={toggleConfirmPasswordVisibility}
                       role="button"
                     >
                       <img
