@@ -32,13 +32,16 @@ function Register({ isRegister }: { isRegister: boolean }) {
               <div className="logo-container">
                 <img src={top} alt="" className="form-logo" />
               </div>
-              {isRegister ?(  <h2>
-                <span className="highlight">Merchant</span> Registration
-              </h2>):( <h2>
-              <span className="highlight"> Welcome </span> Back!
-            </h2>)
-              }
-            
+              {isRegister ? (
+                <h2>
+                  <span className="highlight">Merchant</span> Registration
+                </h2>
+              ) : (
+                <h2>
+                  <span className="highlight"> Welcome </span> Back!
+                </h2>
+              )}
+
               <p className="topmessage">
                 Enjoy all the feature that make it easy for you to manage your
                 finances
@@ -106,6 +109,22 @@ function Register({ isRegister }: { isRegister: boolean }) {
                     </span>
                   </div>
                 </>
+              )}
+
+              {!isRegister && (
+                <div className="form-extras">
+                  <div className="remember-wrap">
+                    <label className="switch">
+                      <input type="checkbox" id="toggleSwitch" />
+                      <span className="slider"></span>
+                    </label>
+                    <span className="statusText">Remember me</span>
+                  </div>
+
+                  <a href="/forget" className="forget-link">
+                    Forgot Password?
+                  </a>
+                </div>
               )}
 
               <p className="register">

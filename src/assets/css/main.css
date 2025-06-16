@@ -95,7 +95,6 @@ body {
   display: flex;
   align-items: center;
   border-radius: 8px;
-  height: 48px;
   margin-right: 8px;
 }
 
@@ -107,15 +106,15 @@ body {
 .flag-area::after {
   font-size: 12px;
   margin-left: 6px;
-  color: #555;
 }
 
 .input-area {
   background-color: white;
   border: 1px solid #cfd4dc;
-  border-radius: 8px;
-  padding: 5px;
+  border-radius: 12px;
+  padding: 16px 12px 16px 12px;
   width: 100%;
+  margin-top: 14px;
   font-size: 16px;
   box-sizing: border-box;
   font-style: normal;
@@ -192,7 +191,7 @@ input[type="password"]:focus,
 }
 
 .register a {
-  color: #0046ff;
+  color: #1F3A8A;
   text-decoration: none;
 }
 
