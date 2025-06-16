@@ -4,6 +4,7 @@ import sidevideos from "../assets/images/sidevideo.mp4";
 import vector from "../assets/images/Vector.png";
 import eyeClosed from "../assets/images/eyeclosed.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 //import IonIcon from "@reacticons/ionicons";
 
 function Register({ isRegister }: { isRegister: boolean }) {
@@ -47,7 +48,7 @@ function Register({ isRegister }: { isRegister: boolean }) {
                 finances
               </p>
 
-              <label htmlFor="phone" className="lable">
+              <label htmlFor="phone" className="label">
                 Phone Number <span className="requried">*</span>
               </label>
               <div className="phone-wrapper">
@@ -65,7 +66,7 @@ function Register({ isRegister }: { isRegister: boolean }) {
               </div>
 
               <div className="input-wrapper">
-                <label htmlFor="password" className="lable">
+                <label htmlFor="password" className="label">
                   Password
                 </label>
                 <input
@@ -87,7 +88,7 @@ function Register({ isRegister }: { isRegister: boolean }) {
               {isRegister && (
                 <>
                   <div className="input-wrapper">
-                    <label htmlFor="confirm-password" className="lable">
+                    <label htmlFor="confirm-password" className="label">
                       Confirm Password
                     </label>
                     <input
@@ -131,9 +132,9 @@ function Register({ isRegister }: { isRegister: boolean }) {
                 {isRegister
                   ? "Already have an account?"
                   : "Don't have an account?"}
-                <a href={isRegister ? "/" : "/register"}>
+                <Link to={isRegister ? "/" : "/register"}>
                   {isRegister ? " Go back to sign in!" : " Register now!"}
-                </a>
+                </Link>
               </p>
 
               <button type="submit" className="button">
