@@ -1,7 +1,5 @@
 import "../assets/css/register.css";
 import top from "../assets/images/top.png";
-import vector from "../assets/images/Vector.png";
-import eyeClosed from "../assets/images/eyeclosed.png";
 import { useState, type ChangeEvent } from "react";
 import { Link } from "react-router-dom";
 import Sidevideo from "./Sidevideo";
@@ -11,8 +9,6 @@ import InputField from "./Input";
 //import IonIcon from "@reacticons/ionicons";
 
 function Register({ isRegister }: { isRegister: boolean }) {
-  const [showPassword, setShowPassword] = useState(false);
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [selectedCode, setSelectedCode] = useState<string>("+977");
 
   const countryOptions = [
@@ -21,14 +17,6 @@ function Register({ isRegister }: { isRegister: boolean }) {
     { emoji: "🇳🇵", code: "+977" },
     { emoji: "🇮🇳", code: "+91" },
   ];
-
-  const togglePasswordVisibility = () => {
-    setShowPassword((prev) => !prev);
-  };
-
-  const toggleConfirmPasswordVisibility = () => {
-    setShowConfirmPassword((prev) => !prev);
-  };
   const handleCountryChange = (e: ChangeEvent<HTMLSelectElement>) => {
     setSelectedCode(e.target.value);
   };
