@@ -5,6 +5,10 @@ import vector from "../assets/images/Vector.png";
 import eyeClosed from "../assets/images/eyeclosed.png";
 import { useState, type ChangeEvent } from "react";
 import { Link } from "react-router-dom";
+import Sidevideo from "./Sidevideo";
+import Button from "./Button";
+import InputField from "./Input";
+
 //import IonIcon from "@reacticons/ionicons";
 
 function Register({ isRegister }: { isRegister: boolean }) {
@@ -34,9 +38,7 @@ function Register({ isRegister }: { isRegister: boolean }) {
       <div className="container">
         <div className="box-section">
           <div className="video-section">
-            <video autoPlay muted loop playsInline>
-              <source src={sidevideos} type="video/mp4" />
-            </video>
+            <Sidevideo />
           </div>
           {/* right side section */}
           <div className="form-section">
@@ -86,12 +88,9 @@ function Register({ isRegister }: { isRegister: boolean }) {
                 <label htmlFor="password" className="label">
                   Password
                 </label>
-                <input
-                  type={showPassword ? "text" : "password"}
-                  name=""
-                  id="password"
-                  className="password"
-                  placeholder="Enter the password there"
+                <InputField
+                  type={showConfirmPassword ? "text" : "password"}
+                  placeholder="Enter the password"
                 />
                 <span
                   className="eye"
@@ -108,11 +107,10 @@ function Register({ isRegister }: { isRegister: boolean }) {
                     <label htmlFor="confirm-password" className="label">
                       Confirm Password
                     </label>
-                    <input
+
+                    <InputField
                       type={showConfirmPassword ? "text" : "password"}
-                      id="confirm-password"
-                      className="password"
-                      placeholder="Enter confirm password"
+                      placeholder="Enter the confirm password"
                     />
                     <span
                       className="eye"
@@ -154,11 +152,11 @@ function Register({ isRegister }: { isRegister: boolean }) {
                 </Link>
               </p>
 
-              <button type="submit" className="button">
-                {isRegister
-                  ? "Register into your account"
-                  : "Login to your account"}
-              </button>
+              {isRegister ? (
+                <Button type="submit" text="Register into account" />
+              ) : (
+                <Button type="submit" text="Login into account" />
+              )}
             </form>
           </div>
         </div>
