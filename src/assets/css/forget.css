@@ -50,5 +50,7 @@ p {
 }
 .link{
      font-family: "Be Vietnam Pro",sans-serif;
+     display: flex;
+     justify-content: center;
 }
                 

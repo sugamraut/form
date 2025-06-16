@@ -39,7 +39,9 @@ function Forget() {
                 Phone number
               </label>
               <button className="button">Next</button>
-              <a href="/" className="link">← Back to login </a>
+              <a href="/" className="link">
+                ← Back to login{" "}
+              </a>
             </form>
           </div>
         </div>
