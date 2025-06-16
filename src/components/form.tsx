@@ -1,6 +1,5 @@
 import "../assets/css/register.css";
 import top from "../assets/images/top.png";
-import sidevideos from "../assets/images/sidevideo.mp4";
 import vector from "../assets/images/Vector.png";
 import eyeClosed from "../assets/images/eyeclosed.png";
 import { useState, type ChangeEvent } from "react";
@@ -84,46 +83,22 @@ function Register({ isRegister }: { isRegister: boolean }) {
                 </div>
               </div>
 
-              <div className="input-wrapper">
-                <label htmlFor="password" className="label">
-                  Password
-                </label>
-                <InputField
-                  type={showConfirmPassword ? "text" : "password"}
-                  placeholder="Enter the password"
-                />
-                <span
-                  className="eye"
-                  onClick={togglePasswordVisibility}
-                  role="button"
-                >
-                  <img src={showPassword ? eyeClosed : vector} alt="" />
-                </span>
-              </div>
+              <InputField
+                formId="password"
+                labelText="Password"
+                type="password"
+                placeholder="Enter the password"
+              />
+
               {/* Only show Confirm Password on Register page */}
               {isRegister && (
                 <>
-                  <div className="input-wrapper">
-                    <label htmlFor="confirm-password" className="label">
-                      Confirm Password
-                    </label>
-
-                    <InputField
-                      type={showConfirmPassword ? "text" : "password"}
-                      placeholder="Enter the confirm password"
-                    />
-                    <span
-                      className="eye"
-                      //onClick={() => setShowConfirmPassword((p) => !p)}
-                      onClick={toggleConfirmPasswordVisibility}
-                      role="button"
-                    >
-                      <img
-                        src={showConfirmPassword ? eyeClosed : vector}
-                        alt="toggle"
-                      />
-                    </span>
-                  </div>
+                  <InputField
+                    formId="confirm_password"
+                    labelText="confirm password"
+                    type="password"
+                    placeholder="Enter the confirm password"
+                  />
                 </>
               )}
 
