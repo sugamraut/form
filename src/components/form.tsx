@@ -3,13 +3,21 @@ import top from "../assets/images/top.png";
 import sidevideos from "../assets/images/sidevideo.mp4";
 import vector from "../assets/images/Vector.png";
 import eyeClosed from "../assets/images/eyeclosed.png";
-import { useState } from "react";
+import { useState, type ChangeEvent } from "react";
 import { Link } from "react-router-dom";
 //import IonIcon from "@reacticons/ionicons";
 
 function Register({ isRegister }: { isRegister: boolean }) {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [selectedCode, setSelectedCode] = useState<string>("+977");
+
+  const countryOptions = [
+    { emoji: "🇺🇸", code: "+1" },
+    { emoji: "🇬🇧", code: "+44" },
+    { emoji: "🇳🇵", code: "+977" },
+    { emoji: "🇮🇳", code: "+91" },
+  ];
 
   const togglePasswordVisibility = () => {
     setShowPassword((prev) => !prev);
@@ -17,6 +25,9 @@ function Register({ isRegister }: { isRegister: boolean }) {
 
   const toggleConfirmPasswordVisibility = () => {
     setShowConfirmPassword((prev) => !prev);
+  };
+  const handleCountryChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    setSelectedCode(e.target.value);
   };
   return (
     <>
@@ -53,14 +64,20 @@ function Register({ isRegister }: { isRegister: boolean }) {
               </label>
               <div className="phone-wrapper">
                 <div className="flag-area">
-                  <select name="" id="" className="dropdown">
-                    <option value="">🚩</option>
-                    <option value="">🏳️</option>
-                    <option value="">🇳🇵</option>
+                  <select
+                    className="dropdown"
+                    value={selectedCode}
+                    onChange={handleCountryChange}
+                  >
+                    {countryOptions.map((option) => (
+                      <option key={option.code} value={option.code}>
+                        {option.emoji}
+                      </option>
+                    ))}
                   </select>
                 </div>
                 <div className="input-area">
-                  <span className="fixed-code">+977</span>
+                  <span className="fixed-code">{selectedCode}</span>
                   <input type="text" id="phone" placeholder="(000) 000-0000" />
                 </div>
               </div>
