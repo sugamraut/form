@@ -1,8 +1,8 @@
-import "../../assets/css/register.css";
-import top from "../../assets/images/top.png";
-import sidevideos from "../../assets/images/sidevideo.mp4";
-import vector from "../../assets/images/Vector.png";
-import eyeClosed from "../../assets/images/eyeclosed.png";
+import "../assets/css/register.css";
+import top from "../assets/images/top.png";
+import sidevideos from "../assets/images/sidevideo.mp4";
+import vector from "../assets/images/Vector.png";
+import eyeClosed from "../assets/images/eyeclosed.png";
 import { useState } from "react";
 //import IonIcon from "@reacticons/ionicons";
 
@@ -32,9 +32,13 @@ function Register({ isRegister }: { isRegister: boolean }) {
               <div className="logo-container">
                 <img src={top} alt="" className="form-logo" />
               </div>
-              <h2>
+              {isRegister ?(  <h2>
                 <span className="highlight">Merchant</span> Registration
-              </h2>
+              </h2>):( <h2>
+              <span className="highlight"> Welcome </span> Back!
+            </h2>)
+              }
+            
               <p className="topmessage">
                 Enjoy all the feature that make it easy for you to manage your
                 finances
@@ -56,10 +60,11 @@ function Register({ isRegister }: { isRegister: boolean }) {
                   <input type="text" id="phone" placeholder="(000) 000-0000" />
                 </div>
               </div>
-              <label htmlFor="password" className="lable">
-                Password
-              </label>
+
               <div className="input-wrapper">
+                <label htmlFor="password" className="lable">
+                  Password
+                </label>
                 <input
                   type={showPassword ? "text" : "password"}
                   name=""
@@ -78,10 +83,10 @@ function Register({ isRegister }: { isRegister: boolean }) {
               {/* Only show Confirm Password on Register page */}
               {isRegister && (
                 <>
-                  <label htmlFor="confirm-password" className="lable">
-                    Confirm Password
-                  </label>
                   <div className="input-wrapper">
+                    <label htmlFor="confirm-password" className="lable">
+                      Confirm Password
+                    </label>
                     <input
                       type={showConfirmPassword ? "text" : "password"}
                       id="confirm-password"
@@ -90,8 +95,8 @@ function Register({ isRegister }: { isRegister: boolean }) {
                     />
                     <span
                       className="eye"
-                     //onClick={() => setShowConfirmPassword((p) => !p)}
-                     onClick={toggleConfirmPasswordVisibility}
+                      //onClick={() => setShowConfirmPassword((p) => !p)}
+                      onClick={toggleConfirmPasswordVisibility}
                       role="button"
                     >
                       <img

@@ -1,5 +1,5 @@
 import "../../assets/css/register.css";
-import Form from "../form/from";
+import Form from "../../components/form";
 
 function Register() {
   return (
