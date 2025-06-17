@@ -1,4 +1,4 @@
-import "../../assets/css/login.css";
+import "../../assets/css/login.scss";
 import Form from "../../components/form";
 
 function Login() {

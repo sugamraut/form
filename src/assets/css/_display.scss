@@ -1,0 +1,9 @@
+@mixin display($type, $align, $content) {
+  display: $type;
+  align-items: $align;
+  justify-content: $content;
+}
+
+@mixin bordered($color, $width) {
+  border: $width solid $color;
+}

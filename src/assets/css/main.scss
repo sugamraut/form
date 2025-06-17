@@ -1,11 +1,15 @@
+@use "colors";
+@use "font";
+@use "display";
+
 
 * {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: font.$myfont;
 }
 
 body {
 
-  background-color: #fff;
+  background-color: colors.$purewhite;
   margin: 0;
   padding: 0;
 }
@@ -33,9 +37,7 @@ body {
 .form-section {
   flex: 1;
   padding: 10px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
+  @include display.display(flex,center,center);
 }
 
 .form-container {
@@ -50,7 +52,7 @@ body {
 .form-container h2 {
   margin-bottom: 0.5rem;
   font-family: Sora;
-  font-style: normal;
+  font-style: font.$style;
   font-weight: 700;
   line-height: 120%;
 }
@@ -58,7 +60,7 @@ body {
 
 
 .form-container .highlight {
-  color: #1F3A8A;
+  color: colors.$darkblue;
 
 }
 
@@ -68,15 +70,15 @@ body {
 }
 
 .requried {
-  color: red;
+  color:colors.$red;
   font-weight: bold;
 }
 
 .label,
 .topmessage {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
+  font-size: font.$size;
+  font-style: font.$style;
+  font-weight: font.$weight;
   line-height: 24px;
 }
 
@@ -105,20 +107,20 @@ body {
 }
 
 .input-area {
-  background-color: white;
-  border: 1px solid #cfd4dc;
+  background-color: colors.$purewhite;
+  @include display.bordered(#cfd4dc,1px);
   border-radius: 12px;
   padding: 16px 12px 16px 12px;
   width: 100%;
-  font-size: 16px;
+  font-size: font.$size;
   box-sizing: border-box;
-  font-style: normal;
-  font-weight: 400
+  font-style: font.$style;
+  font-weight: font.$weight;
 }
 
 .fixed-code {
   color: #1e1e2f;
-  font-size: 16px;
+  font-size: font.$size;
   font-weight: 500;
   margin-right: 6px;
   white-space: nowrap;
@@ -126,10 +128,10 @@ body {
 
 .input-area input {
   border: none;
-  font-size: 16px;
+  font-size: font.$size;
   color: #333;
-  font-style: normal;
-  font-weight: 400;
+  font-style: font.$style;
+  font-weight: font.$weight;
   outline: none;
 }
 
@@ -144,13 +146,13 @@ body {
 .password {
   padding: 0.5rem;
   margin-bottom: 1rem;
-  font-style: normal;
-  font-weight: 400;
+  font-style: font.$style;
+  font-weight: font.$weight;
   gap: 8px;
 }
 
 input[type="password"]:focus {
-  border: 1px solid #212529;
+  @include display.bordered(#212529,1px);
   outline: none;
 }
 .dropdown:focus{
@@ -165,8 +167,8 @@ input[type="password"]:focus {
 
 .button {
   width: 100%;
-  background-color: #1F3A8A;
-  color: white;
+  background-color: colors.$darkblue;
+  color: colors.$purewhite;
   border: none;
   padding: 0.8rem;
   border-radius: 30px;
@@ -176,18 +178,16 @@ input[type="password"]:focus {
 }
 
 .button:hover {
-  background-color: #0035e0;
+  background-color: colors.$lightblue;
 }
 
 .register {
   font-size: 0.9rem;
-  display: flex;
-  justify-content: center;
-
+  @include display.display(flex,unset,center);
 }
 
 .register a {
-  color: #1F3A8A;
+  color: colors.$darkblue;
   text-decoration: none;
 }
 
