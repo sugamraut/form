@@ -1,0 +1,55 @@
+@use "font";
+@use "colors";
+@use "display";
+h2 {
+  color: #151619;
+  font-weight: 700;
+}
+
+p {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 25px;
+}
+
+.option {
+  @include display.display(flex, center, unset);
+  // display: flex;
+  // align-items: center;
+  @include display.bordered(colors.$whitecolor, 1px);
+  // border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.option input[type="radio"] {
+  margin-right: 10px;
+  accent-color: colors.$a2dfd;
+}
+
+.option:hover {
+  background-color: #f0f4ff;
+}
+
+.back {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: colors.$a2dfd;
+  text-decoration: none;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.text-area {
+  display: flex;
+  font-family: font.$myfont;
+}
+.link {
+  font-family: font.$myfont;
+  @include display.display(flex, unset, center);
+}

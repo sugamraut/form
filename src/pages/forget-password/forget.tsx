@@ -1,5 +1,5 @@
 import top from "../../assets/images/top.png";
-import "../../assets/css/forget.css";
+import "../../assets/css/forget.scss";
 import sidevideos from "../../assets/images/sidevideo.mp4";
 function Forget() {
   return (

@@ -1,7 +1,7 @@
-@use 'colors';
-@use 'font';
-@use 'display';
-$color:#1F3A8A;
+@use "colors";
+@use "font";
+@use "display";
+$color: #1f3a8a;
 
 .dropdown {
   height: 50px;
@@ -14,8 +14,6 @@ $color:#1F3A8A;
   display: inline-block;
   width: 45px;
 }
-
-
 
 .slider {
   position: absolute;
@@ -31,6 +29,7 @@ $color:#1F3A8A;
 
 .slider:before {
   position: absolute;
+  content: "";
   height: 15px;
   width: 15px;
   left: 2px;
@@ -40,27 +39,25 @@ $color:#1F3A8A;
   border-radius: 50%;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: colors.$darkblue;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   transform: translateX(26px);
 }
 
 .statusText {
-
   margin: 5px;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: font.$myfont;
   font-size: font.$size;
   font-style: font.$style;
   font-weight: font.$weight;
   line-height: 24px;
-
 }
 
 .form-extras {
-  @include display.display(flex,center,space-between);
+  @include display.display(flex, center, space-between);
   font-size: 0.85rem;
   margin-bottom: 1.2rem;
 }
@@ -68,6 +65,5 @@ input:checked+.slider:before {
 .forget-link {
   text-decoration: none;
   color: colors.$darkblue;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: font.$myfont;
 }
-
