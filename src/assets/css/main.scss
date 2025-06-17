@@ -135,7 +135,8 @@ body {
 }
 
 .input-area:focus-within {
-  border: 1px solid #212529;
+  @include display.bordered(#212529, 1px);
+  // border: 1px solid #212529;
 }
 
 .password {
