@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Sidevideo from "./Sidevideo";
 import Button from "./Button";
 import InputField from "./Input";
-import PhoneInput from "./Phoneinput";
+// import PhoneInput from "./Phoneinput";
 
 //import IonIcon from "@reacticons/ionicons";
 
@@ -55,17 +55,16 @@ function Register({ isRegister }: { isRegister: boolean }) {
                 countryOptions={countryOptions}
               /> */}
               <InputField
-                  formId="phone"
-                  labelText="Phone Number"
-                  type="text"
-                  placeholder="(000) 000-0000"
-                  isPhone={true}
-                  selectedCode={selectedCode}
-                  handleCountryChange={handleCountryChange}
-                  countryOptions={countryOptions}
-                />
+                formId="phone"
+                labelText="Phone Number"
+                type="text"
+                placeholder="(000) 000-0000"
+                selectedCode={selectedCode}
+                handleCountryChange={handleCountryChange}
+                countryOptions={countryOptions}
+              />
 
-{/* 
+              {/* 
               <InputField
                 formId="password"
                 labelText="Password"
@@ -73,13 +72,11 @@ function Register({ isRegister }: { isRegister: boolean }) {
                 placeholder="Enter the password"
               /> */}
               <InputField
-  formId="password"
-  labelText="Password"
-  type="password"
-  placeholder="Enter your password"
-/>
-
-
+                formId="password"
+                labelText="Password"
+                type="password"
+                placeholder="Enter your password"
+              />
 
               {/* Only show Confirm Password on Register page */}
               {isRegister && (
