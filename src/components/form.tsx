@@ -49,18 +49,37 @@ function Register({ isRegister }: { isRegister: boolean }) {
                 finances
               </p>
 
-              <PhoneInput
+              {/* <PhoneInput
                 selectedCode={selectedCode}
                 handleCountryChange={handleCountryChange}
                 countryOptions={countryOptions}
-              />
+              /> */}
+              <InputField
+                  formId="phone"
+                  labelText="Phone Number"
+                  type="text"
+                  placeholder="(000) 000-0000"
+                  isPhone={true}
+                  selectedCode={selectedCode}
+                  handleCountryChange={handleCountryChange}
+                  countryOptions={countryOptions}
+                />
 
+{/* 
               <InputField
                 formId="password"
                 labelText="Password"
                 type="password"
                 placeholder="Enter the password"
-              />
+              /> */}
+              <InputField
+  formId="password"
+  labelText="Password"
+  type="password"
+  placeholder="Enter your password"
+/>
+
+
 
               {/* Only show Confirm Password on Register page */}
               {isRegister && (

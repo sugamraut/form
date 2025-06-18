@@ -1,9 +1,8 @@
-import React from "react";
 import { type ChangeEvent } from "react";
 
 interface PhoneInputProps {
   selectedCode: string;
-  handleCountryChange: (e:ChangeEvent<HTMLSelectElement>) => void;
+  handleCountryChange: (e: ChangeEvent<HTMLSelectElement>) => void;
   countryOptions: { emoji: string; code: string }[];
 }
 
