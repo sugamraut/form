@@ -1,16 +1,17 @@
 import React from "react";
+import { type ChangeEvent } from "react";
 
 interface PhoneInputProps {
   selectedCode: string;
-  handleCountryChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  handleCountryChange: (e:ChangeEvent<HTMLSelectElement>) => void;
   countryOptions: { emoji: string; code: string }[];
 }
 
-const PhoneInput: React.FC<PhoneInputProps> = ({
+const PhoneInput = ({
   selectedCode,
   handleCountryChange,
   countryOptions,
-}) => {
+}: PhoneInputProps) => {
   return (
     <>
       <label htmlFor="phone" className="label">

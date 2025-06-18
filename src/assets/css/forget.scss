@@ -22,15 +22,13 @@ p {
   padding: 10px 15px;
   margin-bottom: 15px;
   cursor: pointer;
-}
-
-.option input[type="radio"] {
-  margin-right: 10px;
-  accent-color: colors.$a2dfd;
-}
-
-.option:hover {
-  background-color: #f0f4ff;
+  input[type="radio"] {
+    margin-right: 10px;
+    accent-color: colors.$a2dfd;
+  }
+  &:hover {
+    background-color: #f0f4ff;
+  }
 }
 
 .back {
@@ -39,10 +37,9 @@ p {
   font-size: 14px;
   color: colors.$a2dfd;
   text-decoration: none;
-}
-
-.back:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .text-area {

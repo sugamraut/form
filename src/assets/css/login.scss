@@ -3,12 +3,6 @@
 @use "display";
 $color: #1f3a8a;
 
-// .dropdown {
-//   height: 50px;
-//   border-radius: 8px;
-//   border: none;
-// }
-
 .form-extras {
   @include display.display(flex, center, space-between);
   font-size: 0.85rem;

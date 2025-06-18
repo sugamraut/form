@@ -49,11 +49,11 @@ function Register({ isRegister }: { isRegister: boolean }) {
                 finances
               </p>
 
-                 <PhoneInput
-        selectedCode={selectedCode}
-        handleCountryChange={handleCountryChange}
-        countryOptions={countryOptions}
-      />
+              <PhoneInput
+                selectedCode={selectedCode}
+                handleCountryChange={handleCountryChange}
+                countryOptions={countryOptions}
+              />
 
               <InputField
                 formId="password"
