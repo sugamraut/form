@@ -3,67 +3,61 @@
 @use "display";
 $color: #1f3a8a;
 
-.dropdown {
-  height: 50px;
-  border-radius: 8px;
-  border: none;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 45px;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0px;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 34px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 15px;
-  width: 15px;
-  left: 2px;
-  bottom: 2px;
-  background-color: colors.$purewhite;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
-  background-color: colors.$darkblue;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-.statusText {
-  margin: 5px;
-  font-family: font.$myfont;
-  font-size: font.$size;
-  font-style: font.$style;
-  font-weight: font.$weight;
-  line-height: 24px;
-}
+// .dropdown {
+//   height: 50px;
+//   border-radius: 8px;
+//   border: none;
+// }
 
 .form-extras {
   @include display.display(flex, center, space-between);
   font-size: 0.85rem;
   margin-bottom: 1.2rem;
-}
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0px;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: 0.4s;
+      border-radius: 34px;
+      &:before {
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 15px;
+        left: 2px;
+        bottom: 2px;
+        background-color: colors.$purewhite;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+    }
+    input:checked + .slider {
+      background-color: colors.$darkblue;
+    }
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
 
-.forget-link {
-  text-decoration: none;
-  color: colors.$darkblue;
-  font-family: font.$myfont;
+    .statusText {
+      margin: 5px;
+      font-family: font.$myfont;
+      font-size: font.$size;
+      font-style: font.$style;
+      font-weight: font.$weight;
+      line-height: 24px;
+    }
+  }
+  .forget-link {
+    text-decoration: none;
+    color: colors.$darkblue;
+    font-family: font.$myfont;
+  }
 }

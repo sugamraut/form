@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Sidevideo from "./Sidevideo";
 import Button from "./Button";
 import InputField from "./Input";
+import PhoneInput from "./Phoneinput";
 
 //import IonIcon from "@reacticons/ionicons";
 
@@ -48,28 +49,11 @@ function Register({ isRegister }: { isRegister: boolean }) {
                 finances
               </p>
 
-              <label htmlFor="phone" className="label">
-                Phone Number <span className="requried">*</span>
-              </label>
-              <div className="phone-wrapper">
-                <div className="flag-area">
-                  <select
-                    className="dropdown"
-                    value={selectedCode}
-                    onChange={handleCountryChange}
-                  >
-                    {countryOptions.map((option) => (
-                      <option key={option.code} value={option.code}>
-                        {option.emoji}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-                <div className="input-area">
-                  <span className="fixed-code">{selectedCode}</span>
-                  <input type="text" id="phone" placeholder="(000) 000-0000" />
-                </div>
-              </div>
+                 <PhoneInput
+        selectedCode={selectedCode}
+        handleCountryChange={handleCountryChange}
+        countryOptions={countryOptions}
+      />
 
               <InputField
                 formId="password"
