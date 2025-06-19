@@ -23,9 +23,9 @@ function Register({ isRegister }: { isRegister: boolean }) {
   };
   return (
     <>
-      <div className="container">
-        <div className="box-section">
-          <div className="video-section">
+      <div className="container border  ">
+        <div className="box-section d-xxl-flex d-md-flex d-sm-flex overflow-hidden ">
+          <div className="video-section  ">
             <Sidevideo />
           </div>
           {/* right side section */}

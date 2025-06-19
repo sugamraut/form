@@ -15,15 +15,12 @@ body {
 .container {
   align-items: center;
   .box-section {
-    display: flex;
-    overflow: hidden;
+   
     .video-section {
       flex: 1;
       video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 20px;
+        
+       
       }
     }
     .form-section {
@@ -236,7 +233,13 @@ p {
     font-size: 40px;
   }
 }
+/*larger sceeen*/
+@media (min-width:1400px){
+ .container {
+         max-width:100%; 
+    }
 
+}
 /* Tablets and medium screens */
 @media (max-width: 1199px) and (min-width: 768px) {
   .box-section {
