@@ -17,18 +17,13 @@ body {
   .box-section {
    
     .video-section {
-      flex: 1;
-      video {
-        
-       
-      }
+   
     }
     .form-section {
-      flex: 1;
-      @include display.display(flex, center, center);
+     
+      // @include display.display(flex, center, center);
       .form-container {
-        width: 100%;
-        max-width: 860px;
+       
         .logo-container {
           .form-logo {
             width: 59px;

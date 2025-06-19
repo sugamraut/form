@@ -23,14 +23,14 @@ function Register({ isRegister }: { isRegister: boolean }) {
   };
   return (
     <>
-      <div className="container border  ">
+      <div className="container border w-100  ">
         <div className="box-section d-xxl-flex d-md-flex d-sm-flex overflow-hidden ">
-          <div className="video-section  ">
+          <div className="video-section flex-grow-1 flex-shrink-1">
             <Sidevideo />
           </div>
           {/* right side section */}
-          <div className="form-section">
-            <form className="form-container">
+          <div className="form-section row align-items-center justify-content-center flex-grow-1 flex-shrink-1 ">
+            <form className="form-container w-100 mx-860px">
               <div className="logo-container">
                 <img src={top} alt="" className="form-logo" />
               </div>
