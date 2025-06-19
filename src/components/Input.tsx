@@ -2,19 +2,13 @@ import { useState, type ChangeEvent } from "react";
 import vector from "../assets/images/Vector.png";
 import eyeclosed from "../assets/images/eyeclosed.png";
 
-interface Iinput {
-  type: string;
-  placeholder: string;
-  labelText: string;
-  formId: string;
-}
 interface InputProps {
   type: string;
   placeholder: string;
   labelText: string;
   formId: string;
   selectedCode?: string;
-  handleCountryChange?: (e:ChangeEvent<HTMLSelectElement>) => void;
+  handleCountryChange?: any;
   countryOptions?: { emoji: string; code: string }[];
 }
 const InputField = ({
@@ -22,7 +16,7 @@ const InputField = ({
   placeholder,
   labelText,
   formId,
-  selectedCode = "+1",
+  selectedCode ,
   handleCountryChange,
   countryOptions = [],
 }: InputProps) => {
