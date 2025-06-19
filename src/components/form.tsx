@@ -34,16 +34,17 @@ function Register({ isRegister }: { isRegister: boolean }) {
               <div className="logo-container">
                 <img src={top} alt="" className="form-logo" />
               </div>
-              {isRegister ? (
-                <h2>
-                  <span className="highlight">Merchant</span> Registration
-                </h2>
-              ) : (
-                <h2>
-                  <span className="highlight"> Welcome </span> Back!
-                </h2>
-              )}
-
+              <h2>
+                {isRegister ? (
+                  <>
+                    <span className="highlight">Merchant</span> Registration
+                  </>
+                ) : (
+                  <>
+                    <span className="highlight"> Welcome </span> Back!
+                  </>
+                )}
+              </h2>
               <p className="topmessage">
                 Enjoy all the feature that make it easy for you to manage your
                 finances
@@ -57,20 +58,13 @@ function Register({ isRegister }: { isRegister: boolean }) {
               <InputField
                 formId="phone"
                 labelText="Phone Number"
-                type="text"
+                type="tel"
                 placeholder="(000) 000-0000"
                 selectedCode={selectedCode}
                 handleCountryChange={handleCountryChange}
                 countryOptions={countryOptions}
               />
 
-              {/* 
-              <InputField
-                formId="password"
-                labelText="Password"
-                type="password"
-                placeholder="Enter the password"
-              /> */}
               <InputField
                 formId="password"
                 labelText="Password"

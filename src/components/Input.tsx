@@ -8,35 +8,27 @@ interface InputProps {
   labelText: string;
   formId: string;
   selectedCode?: string;
-  handleCountryChange?: any;
-  countryOptions?: { emoji: string; code: string }[];
+  handleCountryChange?: (e:ChangeEvent<HTMLSelectElement>)=>void;
+  countryOptions?: { emoji: string; code: string }[]|undefined;
 }
-const InputField = ({
-  type,
-  placeholder,
-  labelText,
-  formId,
-  selectedCode ,
-  handleCountryChange,
-  countryOptions = [],
-}: InputProps) => {
+const InputField = (props: InputProps) => {
   const [showPassword, setShowPassword] = useState(false);
   const togglePasswordVisibility = () => setShowPassword((prev) => !prev);
 
-  if (type === "text") {
+  if (props.type === "tel") {
     return (
       <>
-        <label htmlFor={formId} className="label">
-          {labelText} <span className="requried">*</span>
+        <label htmlFor={props.formId} className="label">
+          {props.labelText} <span className="requried">*</span>
         </label>
         <div className="phone-wrapper">
           <div className="flag-area">
             <select
               className="dropdown"
-              value={selectedCode}
-              onChange={handleCountryChange}
+              value={props.selectedCode}
+              onChange={props.handleCountryChange}
             >
-              {countryOptions.map((option) => (
+              {(props.countryOptions ?? []).map((option) => (
                 <option key={option.code} value={option.code}>
                   {option.emoji}
                 </option>
@@ -44,12 +36,12 @@ const InputField = ({
             </select>
           </div>
           <div className="input-area">
-            <span className="fixed-code">{selectedCode}</span>
+            <span className="fixed-code">{props.selectedCode}</span>
 
             <input
               type="text"
-              id={formId}
-              placeholder={placeholder}
+              id={props.formId}
+              placeholder={props.placeholder}
               className="phone-input"
             />
           </div>
@@ -60,16 +52,16 @@ const InputField = ({
 
   return (
     <div className="input-wrapper">
-      <label htmlFor={formId} className="label">
-        {labelText}
+      <label htmlFor={props.formId} className="label">
+        {props.labelText}
       </label>
       <input
         className="password"
-        id={formId}
-        type={type === "password" ? (showPassword ? "text" : "password") : type}
-        placeholder={placeholder}
+        id={props.formId}
+        type={props.type === "password" ? (showPassword ? "text" : "password") : props.type}
+        placeholder={props.placeholder}
       />
-      {type === "password" && (
+      {props.type === "password" && (
         <span className="eye" onClick={togglePasswordVisibility} role="button">
           <img
             src={showPassword ? eyeclosed : vector}
