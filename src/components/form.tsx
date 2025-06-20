@@ -1,10 +1,11 @@
 import "../assets/css/register.css";
 import top from "../assets/images/top.png";
-import { useState, type ChangeEvent } from "react";
+import { use, useState, type ChangeEvent } from "react";
 import { Link } from "react-router-dom";
 import Sidevideo from "./Sidevideo";
 import Button from "./Button";
 import InputField from "./Input";
+// import font from"../assets/css/_font.scss";
 // import PhoneInput from "./Phoneinput";
 
 //import IonIcon from "@reacticons/ionicons";
@@ -23,7 +24,7 @@ function Register({ isRegister }: { isRegister: boolean }) {
   };
   return (
     <>
-      <div className="container border w-100  ">
+      <div className="container border w-100 align-item-center">
         <div className="box-section d-xxl-flex d-md-flex d-sm-flex overflow-hidden ">
           <div className="video-section flex-grow-1 flex-shrink-1">
             <Sidevideo />
@@ -32,17 +33,23 @@ function Register({ isRegister }: { isRegister: boolean }) {
           <div className="form-section row align-items-center justify-content-center flex-grow-1 flex-shrink-1 ">
             <form className="form-container w-100 mx-860px">
               <div className="logo-container">
-                <img src={top} alt="" className="form-logo" />
+                <img src={top} alt="" className="form-logo w-3.5" />
               </div>
-              {isRegister ? (
-                <h2>
-                  <span className="highlight">Merchant</span> Registration
-                </h2>
-              ) : (
-                <h2>
-                  <span className="highlight"> Welcome </span> Back!
-                </h2>
-              )}
+              <h2 className="">
+                {isRegister ? (
+                  <>
+                  
+                    <span className="highlight">
+                      Merchant
+                    </span> Registration
+                  </>
+                ) : (
+                  <>
+                    
+                    <span className="highlight"> Welcome </span> Back!
+                  </>
+                )}
+              </h2>
 
               <p className="topmessage">
                 Enjoy all the feature that make it easy for you to manage your

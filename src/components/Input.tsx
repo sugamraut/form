@@ -26,8 +26,8 @@ const InputField = ({
   if (type === "text") {
     return (
       <>
-        <label htmlFor={formId} className="label">
-          {labelText} <span className="requried">*</span>
+        <label htmlFor={formId} className="label fs-0.5 fst-normal fw-normal lh-base ">
+          {labelText} <span className="requried ">*</span>
         </label>
         <div className="phone-wrapper">
           <div className="flag-area">
