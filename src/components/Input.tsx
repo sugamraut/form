@@ -21,6 +21,7 @@ const InputField = ({
   countryOptions = [],
 }: InputProps) => {
   const [showPassword, setShowPassword] = useState(false);
+   const [inputValue, setInputValue] = useState("");
   const togglePasswordVisibility = () => setShowPassword((prev) => !prev);
 
   if (type === "text") {
@@ -30,7 +31,7 @@ const InputField = ({
           htmlFor={formId}
           className="label fs-0.5 fst-normal fw-normal lh-base "
         >
-          {labelText} <span className="requried ">*</span>
+          {labelText} <span className="required text-danger ">*</span>
         </label>
         <div className="phone-wrapper d-flex align-item-center w-100">
           <div className="flag-area  align-item-center">
@@ -75,8 +76,10 @@ const InputField = ({
             type === "password" ? (showPassword ? "text" : "password") : type
           }
           placeholder={placeholder}
+           value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
         />
-        {type === "password" && (
+        {type === "password" && inputValue && (
           <span
             className="eye position-absolute top-50 "
             onClick={togglePasswordVisibility}

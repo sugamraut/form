@@ -60,11 +60,27 @@
   }
 
   .video-section {
-    width: 100%;
-    height: 50%;
-    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; 
+    opacity: 0.9;
   }
-
+.label{
+    color:#ccc;
+}
+.statusText{
+    color: whitesmoke;
+}
+.required{
+    color: red;
+}
+.register{
+    color: whitesmoke;
+}
   .form-section {
     width: 100%;
     padding-top: 15px;
@@ -84,6 +100,6 @@
   input[type="password"],
   input[type="tel"],
   .dropdown {
-    width: 94%;
+    width: 100%;
   }
 }
