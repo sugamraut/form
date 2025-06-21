@@ -20,7 +20,7 @@ body {
       .form-container {
         max-width: 860px;
         .logo-container {
-          .form-logo{
+          .form-logo {
             width: 59px;
           }
         }
@@ -66,7 +66,7 @@ p {
     font-weight: font.$weight;
     line-height: 24px;
   }
-  
+
   input {
     padding: 16px 12px 16px 12px;
     font-size: 16px;
@@ -111,8 +111,8 @@ p {
     border-radius: 8px;
     margin-right: 8px;
     .dropdown {
-      height: 50px;
-      border-radius: 8px;
+      height: 100%;
+      border-radius: 12px;
       border: none;
       &:focus {
         border: none;
@@ -192,4 +192,3 @@ p {
     text-decoration: none;
   }
 }
-

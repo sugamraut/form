@@ -22,10 +22,10 @@ function Forget() {
                 />
               </div>
 
-              <h2>
+              <h2 className="title">
                 <span>Choose</span>Recovery Process
               </h2>
-              <p className="text-area">
+              <p className="topmessage">
                 Selected the contact details you prefer for password recovery
               </p>
               <label className="option">

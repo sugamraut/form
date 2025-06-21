@@ -35,7 +35,7 @@ function Register({ isRegister }: { isRegister: boolean }) {
               <div className="logo-container">
                 <img src={top} alt="" className="form-logo" />
               </div>
-              <h2 className="">
+              <h2 className="title">
                 {isRegister ? (
                   <>
                     <span className="highlight">Merchant</span> Registration
@@ -88,7 +88,7 @@ function Register({ isRegister }: { isRegister: boolean }) {
                       <input type="checkbox" id="toggleSwitch" />
                       <span className="slider"></span>
                     </label>
-                    <span className="statusText">Remember me</span>
+                    <span className="statusText"> Remember me</span>
                   </div>
 
                   <a href="/forget" className="forget-link">
@@ -101,7 +101,7 @@ function Register({ isRegister }: { isRegister: boolean }) {
                 {isRegister
                   ? "Already have an account?"
                   : "Don't have an account?"}
-                <Link to={isRegister ? "/" : "/register"}>
+                <Link to={isRegister ? "/" : "/register"} className="linkbutton">
                   {isRegister ? " Go back to sign in!" : " Register now!"}
                 </Link>
               </p>

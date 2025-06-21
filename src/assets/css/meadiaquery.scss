@@ -66,21 +66,21 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    z-index: -1; 
+    z-index: -1;
     opacity: 0.9;
   }
-.label{
-    color:#ccc;
-}
-.statusText{
-    color: whitesmoke;
-}
-.required{
+  .label {
+    color: white;
+  }
+  .statusText {
+    color: #ccc;
+  }
+  .required {
     color: red;
-}
-.register{
-    color: whitesmoke;
-}
+  }
+  .register {
+    color: rgb(255, 255, 255);
+  }
   .form-section {
     width: 100%;
     padding-top: 15px;
@@ -96,10 +96,41 @@
     padding: 0.6rem;
     font-size: 0.85rem;
   }
-
+  .input-area {
+    background-color: aliceblue !important;
+  }
+  .phone-input {
+    background-color: aliceblue !important;
+  }
+  .password {
+    background-color: aliceblue !important;
+  }
   input[type="password"],
   input[type="tel"],
   .dropdown {
     width: 100%;
   }
+  .title {
+  color: #ccc;
+}
+.highlight {
+  color: #626dee !important;
+}
+.topmessage {
+  color: #ccc;
+}
+.linkbutton {
+  color: #1a259c !important;
+  font-weight: bolder;
+}
+.forget-link {
+  color: #1a259c !important;
+  font-weight: bolder;
+}
+.dropdown {
+     background-color:aliceblue !important;
+}
+.option{
+    color: rgb(255, 255, 255);
+}
 }
