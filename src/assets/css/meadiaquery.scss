@@ -1,0 +1,89 @@
+/* Large desktops and bigger screens */
+@media (min-width: 1200px) {
+  .box-section {
+    height: 100vh;
+  }
+
+  .video-section {
+    width: 687px;
+    padding: 30px;
+  }
+
+  .form-section {
+    padding-right: 55px;
+  }
+
+  .form-container h2 {
+    font-size: 40px;
+  }
+}
+/*larger sceeen*/
+@media (min-width: 1400px) {
+  .container {
+    max-width: 100%;
+  }
+}
+/* Tablets and medium screens */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .box-section {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .video-section {
+    width: 50%;
+    padding: 20px;
+    height: 560px;
+  }
+
+  .form-section {
+    width: 50%;
+    height: 555px;
+    padding: 20px 30px;
+  }
+
+  .form-container h2 {
+    font-size: 32px;
+  }
+
+  .button {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  .box-section {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .video-section {
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+  }
+
+  .form-section {
+    width: 100%;
+    padding-top: 15px;
+    margin: 0px;
+  }
+
+  .form-container h2 {
+    font-size: 28px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  input[type="password"],
+  input[type="tel"],
+  .dropdown {
+    width: 94%;
+  }
+}

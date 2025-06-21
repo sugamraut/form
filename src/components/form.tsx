@@ -1,6 +1,6 @@
 import "../assets/css/register.css";
 import top from "../assets/images/top.png";
-import { use, useState, type ChangeEvent } from "react";
+import {useState, type ChangeEvent } from "react";
 import { Link } from "react-router-dom";
 import Sidevideo from "./Sidevideo";
 import Button from "./Button";
