@@ -4,7 +4,7 @@ interface IButtonProps {
 }
 function Button({ type, text }: IButtonProps) {
   return (
-    <button className="button" type={type}>
+    <button className="button w-100" type={type}>
       {text}
     </button>
   );

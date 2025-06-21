@@ -8,7 +8,7 @@ interface InputProps {
   labelText: string;
   formId: string;
   selectedCode?: string;
-  handleCountryChange?: any;
+  handleCountryChange?: (e: ChangeEvent<HTMLSelectElement>) => void;
   countryOptions?: { emoji: string; code: string }[];
 }
 const InputField = ({
@@ -16,7 +16,7 @@ const InputField = ({
   placeholder,
   labelText,
   formId,
-  selectedCode ,
+  selectedCode,
   handleCountryChange,
   countryOptions = [],
 }: InputProps) => {
@@ -26,11 +26,14 @@ const InputField = ({
   if (type === "text") {
     return (
       <>
-        <label htmlFor={formId} className="label fs-0.5 fst-normal fw-normal lh-base ">
+        <label
+          htmlFor={formId}
+          className="label fs-0.5 fst-normal fw-normal lh-base "
+        >
           {labelText} <span className="requried ">*</span>
         </label>
-        <div className="phone-wrapper">
-          <div className="flag-area">
+        <div className="phone-wrapper d-flex align-item-center w-100">
+          <div className="flag-area  align-item-center">
             <select
               className="dropdown"
               value={selectedCode}
@@ -43,14 +46,14 @@ const InputField = ({
               ))}
             </select>
           </div>
-          <div className="input-area">
+          <div className="input-area d-flex w-100">
             <span className="fixed-code">{selectedCode}</span>
 
             <input
               type="text"
               id={formId}
               placeholder={placeholder}
-              className="phone-input"
+              className="phone-input w-100 "
             />
           </div>
         </div>
@@ -59,24 +62,33 @@ const InputField = ({
   }
 
   return (
-    <div className="input-wrapper">
+    <div className="input-wrapper ">
       <label htmlFor={formId} className="label">
         {labelText}
       </label>
-      <input
-        className="password"
-        id={formId}
-        type={type === "password" ? (showPassword ? "text" : "password") : type}
-        placeholder={placeholder}
-      />
-      {type === "password" && (
-        <span className="eye" onClick={togglePasswordVisibility} role="button">
-          <img
-            src={showPassword ? eyeclosed : vector}
-            alt="toggle visibility"
-          />
-        </span>
-      )}
+      <div className="input-group">
+        <input
+          className="password w-100"
+          style={{borderRadius:'12px'}}
+          id={formId}
+          type={
+            type === "password" ? (showPassword ? "text" : "password") : type
+          }
+          placeholder={placeholder}
+        />
+        {type === "password" && (
+          <span
+            className="eye position-absolute top-50 "
+            onClick={togglePasswordVisibility}
+            role="button"
+          >
+            <img
+              src={showPassword ? eyeclosed : vector}
+              alt="toggle visibility"
+            />
+          </span>
+        )}
+      </div>
     </div>
   );
 };

@@ -12,31 +12,25 @@ body {
   padding: 0;
 }
 
-.container {
+.container-fluid {
   align-items: center;
   .box-section {
-   
-    .video-section {
-   
-    }
     .form-section {
-     
       // @include display.display(flex, center, center);
       .form-container {
-       
+        max-width: 860px;
         .logo-container {
-          .form-logo {
+          .form-logo{
             width: 59px;
           }
         }
 
         .label {
-          // font-size: font.$size;
-          // font-style: font.$style;
-          // font-weight: font.$weight;
-          // line-height: 24px;
+          font-size: font.$size;
+          font-style: font.$style;
+          font-weight: font.$weight;
+          line-height: 24px;
           .requried {
-            
             font-weight: bold;
           }
         }
@@ -65,8 +59,6 @@ p {
   }
 }
 .input-wrapper {
-  position: relative;
-  width: 100%;
   margin-bottom: 14px;
   .label {
     font-size: font.$size;
@@ -74,20 +66,20 @@ p {
     font-weight: font.$weight;
     line-height: 24px;
   }
+  
   input {
-    width: 100%;
     padding: 16px 12px 16px 12px;
     font-size: 16px;
     margin-top: 14px;
     border: 1px solid #ccc;
-    border-radius: 12px;
     box-sizing: border-box;
     .password {
       padding: 0.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: auto;
       font-style: font.$style;
       font-weight: font.$weight;
       gap: 8px;
+      border-radius: 12px;
     }
   }
   input[type="password"]:focus {
@@ -95,13 +87,11 @@ p {
     outline: none;
   }
   .eye {
-    position: absolute;
-    top: 71%;
-    right: 12px;
+    margin-top: auto;
+    right: 15px;
+    bottom: 25px;
     transform: translateY(-50%);
     cursor: pointer;
-    display: flex;
-    align-items: center;
     img {
       opacity: 0.6;
       transition: opacity 0.2s;
@@ -114,14 +104,10 @@ p {
   }
 }
 .phone-wrapper {
-  display: flex;
-  align-items: center;
   margin-bottom: 1rem;
   margin-top: 14px;
 
   .flag-area {
-    display: flex;
-    align-items: center;
     border-radius: 8px;
     margin-right: 8px;
     .dropdown {
@@ -147,7 +133,6 @@ p {
     @include display.bordered(#cfd4dc, 1px);
     border-radius: 12px;
     padding: 16px 12px 16px 12px;
-    width: 100%;
     font-size: font.$size;
     box-sizing: border-box;
     font-style: font.$style;
@@ -182,7 +167,6 @@ p {
 }
 
 .button {
-  width: 100%;
   background-color: colors.$darkblue;
   color: colors.$purewhite;
   border: none;
@@ -229,11 +213,10 @@ p {
   }
 }
 /*larger sceeen*/
-@media (min-width:1400px){
- .container {
-         max-width:100%; 
-    }
-
+@media (min-width: 1400px) {
+  .container {
+    max-width: 100%;
+  }
 }
 /* Tablets and medium screens */
 @media (max-width: 1199px) and (min-width: 768px) {
