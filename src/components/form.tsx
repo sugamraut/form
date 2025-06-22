@@ -22,6 +22,10 @@ function Register({ isRegister }: { isRegister: boolean }) {
   const handleCountryChange = (e: ChangeEvent<HTMLSelectElement>) => {
     setSelectedCode(e.target.value);
   };
+   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    alert(isRegister ? "You are registering..." : "You are logging in...");
+  };
   return (
     <>
       <div className="container-fluid align-item-center">
@@ -31,7 +35,7 @@ function Register({ isRegister }: { isRegister: boolean }) {
           </div>
           {/* right side section */}
           <div className="form-section row align-items-center justify-content-center flex-grow-1 flex-shrink-1 ">
-            <form className="form-container w-100">
+            <form className="form-container w-100" onSubmit={handleSubmit}>
               <div className="logo-container">
                 <img src={top} alt="" className="form-logo" />
               </div>
@@ -106,11 +110,10 @@ function Register({ isRegister }: { isRegister: boolean }) {
                 </Link>
               </p>
 
-              {isRegister ? (
-                <Button type="submit" text="Register into account" />
-              ) : (
-                <Button type="submit" text="Login into account" />
-              )}
+               <Button
+                type="submit"
+                text={isRegister ? "Register into account" : "Login into account"}
+              />
             </form>
           </div>
         </div>
