@@ -21,7 +21,7 @@ const InputField = ({
   countryOptions = [],
 }: InputProps) => {
   const [showPassword, setShowPassword] = useState(false);
-   const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState("");
   const togglePasswordVisibility = () => setShowPassword((prev) => !prev);
 
   if (type === "text") {
@@ -66,18 +66,19 @@ const InputField = ({
     <div className="input-wrapper ">
       <label htmlFor={formId} className="label">
         {labelText}
+        <span className="required text-danger ">*</span>
       </label>
       <div className="input-group">
         <input
           className="password w-100"
-          style={{borderRadius:'12px'}}
+          style={{ borderRadius: "12px" }}
           id={formId}
           type={
             type === "password" ? (showPassword ? "text" : "password") : type
           }
           placeholder={placeholder}
-           value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
         />
         {type === "password" && inputValue && (
           <span

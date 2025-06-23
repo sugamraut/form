@@ -28,9 +28,9 @@ function Register({ isRegister }: { isRegister: boolean }) {
   };
   return (
     <>
-      <div className="container-fluid align-item-center">
-        <div className="box-section d-xxl-flex d-md-flex d-sm-flex overflow-hidden ">
-          <div className="video-section flex-grow-1 flex-shrink-1">
+      <div className="container-fluid p-0 m-0">
+        <div className="box-section d-flex overflow-hidden ">
+          <div className="video-section row flex-grow-1 flex-shrink-1">
             <Sidevideo />
           </div>
           {/* right side section */}
@@ -86,8 +86,8 @@ function Register({ isRegister }: { isRegister: boolean }) {
               )}
 
               {!isRegister && (
-                <div className="form-extras">
-                  <div className="remember-wrap">
+                <div className="form-extras ">
+                  <div className="remember-wrap col">
                     <label className="switch">
                       <input type="checkbox" id="toggleSwitch" />
                       <span className="slider"></span>
@@ -95,7 +95,7 @@ function Register({ isRegister }: { isRegister: boolean }) {
                     <span className="statusText"> Remember me</span>
                   </div>
 
-                  <a href="/forget" className="forget-link">
+                  <a href="/forget" className="forget-link ">
                     Forgot Password?
                   </a>
                 </div>
