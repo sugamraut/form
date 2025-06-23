@@ -110,10 +110,11 @@ function Register({ isRegister }: { isRegister: boolean }) {
                 </Link>
               </p>
 
-               <Button
-                type="submit"
-                text={isRegister ? "Register into account" : "Login into account"}
-              />
+               {isRegister ? (
+                <Button type="submit" text="Register into account" />
+              ) : (
+                <Button type="submit" text="Login into account" />
+              )}
             </form>
           </div>
         </div>
